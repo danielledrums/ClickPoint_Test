@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <title>Click Point Test</title>
+</head>
+<body>
+    <div class="header"><b style="font-size: 1.5rem"><i class="fab fa-js-square"></i></b> Validador de fracciones por Daniel Velasco </div>
+    <div  id="main" class="flex-container">
+        <div class="main-container">
+            <h1>Representacion gráfica de <span>fracciones</span> matemáticas</h1>
+            
+            <div class="fract-block">
+                <div class="fract-container"><span id="numData"></span>/<span id="denData"></span></div>
+                <button id="make-fraction" class="btn-lg" onclick="randFraction()">crear fracción</button>
+                <button id="validate-fraction" class="btn-lg" onclick="validate()" disabled>validar</button>
+            </div>
+            <div class="fraction-cell-container">
+                <ul id="fraction"> 
+                    <li id="full" class="empty-cell"></li>                  
+                </ul>
+            </div>
+           
+            <div class="fraction-int">
+                <button id="add-cell" class="btn" onclick="addCell()"><i class="fas fa-plus"></i>&nbsp;celda</button>
+                <button id="remove-cell" class="btn" onclick="removeCell()"><i class="fas fa-minus"></i>&nbsp; celda</button>
+                <button id="pint-cell" class="btn" onclick="pintCell()"><i class="fas fa-paint-brush"></i>&nbsp;rellenar</button>
+                <button id="clear-cell" class="btn" onclick="clearCell()"><i class="fas fa-eraser"></i>&nbsp;borrar</button>
+            </div>
+            <div class="leyend">
+                <p><i class="fas fa-plus"></i>&nbsp;Agruega celdas para incrementar el denominador.</p>
+                <p><i class="fas fa-minus"></i>&nbsp;Remueve celdas para reducir el denominador</p>
+                <p><i class="fas fa-paint-brush"></i>&nbsp;Aumenta el indice del numerador</p>
+                <p><i class="fas fa-eraser"></i>&nbsp;Reduce el índice del numerador</p>
+
+            </div>
+            
+        </div>
+        
+           
+           
+    </div>
+    
+    
+    
+</body>
+</html>
